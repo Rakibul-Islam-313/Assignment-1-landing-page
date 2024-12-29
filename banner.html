@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+
+        /* Banner */
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background: #e0e0e0;
+        }
+
+        .banner h1 {
+            margin-bottom: 20px;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+        }
+
+        .clients, .features, .stats {
+            text-align: center;
+        }
+
+        .features div {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .contact form input, .contact form button {
+            padding: 10px;
+            margin: 10px;
+            width: calc(100% - 40px);
+            max-width: 400px;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .features div {
+                display: block;
+                margin: 20px auto;
+            }
+
+            .contact form input, .contact form button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Banner Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="banner-image.jpg" alt="Banner Image">
+    </div>
+
+    <!-- Our Clients -->
+    <section class="clients">
+        <h2>Our Clients</h2>
+        <p>Logos of our clients will go here.</p>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>Explore the Power of Blockchain</h2>
+        <div>
+            <h3>Feature 1</h3>
+            <p>Details about feature 1.</p>
+        </div>
+        <div>
+            <h3>Feature 2</h3>
+            <p>Details about feature 2.</p>
+        </div>
+        <div>
+            <h3>Feature 3</h3>
+            <p>Details about feature 3.</p>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <h2>Helping Blockchain Transform the World</h2>
+        <p>Key statistics will go here.</p>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>
